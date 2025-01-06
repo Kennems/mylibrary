@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "LearnOpensourcePack"
 include(":app")
- 
+include(":mylibrary")
