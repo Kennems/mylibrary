@@ -12,7 +12,7 @@ afterEvaluate {
         publications {
             create<MavenPublication>("release") {
                 from(components["release"])
-                groupId = "com.zhouguan.mylibrary"
+                groupId = "com.zhouguan.learnopensourcepack"
                 artifactId = "mylibrary"
                 version = "1.0.0"
             }
