@@ -4,23 +4,25 @@ plugins {
     id("maven-publish")
 }
 
+group = "com.github.kennems"
+version = "1.0.0"
 
-publishing {
-    publications {
-        create<MavenPublication>("release") {
-            groupId = "com.zhouguan"
-            artifactId = "mylibrary"
-            version = "1.0.0"
-
-            from(components["release"])
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("release") {
+                from(components["release"])
+                groupId = "com.zhouguan.mylibrary"
+                artifactId = "mylibrary"
+                version = "1.0.0"
+            }
         }
     }
-
 }
 
 android {
     namespace = "com.zhouguan.mylibrary"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         minSdk = 24
