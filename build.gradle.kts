@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "com.github.kennems"
-version = "1.0.0"
+version = "1.2.0"
 
 afterEvaluate {
     publishing {
@@ -14,7 +14,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "com.zhouguan.mylibrary"
                 artifactId = "mylibrary"
-                version = "1.0.0"
+                version = "1.2.0"
             }
         }
     }
